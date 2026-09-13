@@ -1,4 +1,4 @@
-# Environment variables / secrets
+# dotenv / secrets
 .env
 .env.*
 !.env.example
@@ -48,26 +48,14 @@
 # Emacs
 \#*\#
 
-# --- Ferramentas de desenvolvimento com IA ---
-# Claude Code
+# AI Development
 .claude/
-
-# Cursor
 .cursor/
-
-# GitHub Copilot (workspace state)
 .copilot/
-
-# Windsurf
 .windsurf/
-
-# Continue.dev
 .continue/
-
-# Aider
 .aider*
 
-# --- Sistema operacional ---
 # macOS
 .DS_Store
 

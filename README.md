@@ -7,7 +7,7 @@ Este repositório é o ponto de partida para novos serviços da Solaria. Ao cria
 - `http/README.md`: convenções do cliente HTTP local.
 - `http/bruno.json`: manifesto da coleção Bruno.
 - `http/environments/local.bru`: ambiente local da API, com credenciais vazias.
-- `http/exemplos/`: requisições `.bru` agrupadas por domínio ou recurso.
+- `http/`: requisições `.bru` agrupadas em diretórios em inglês (`health/`, `authentication/`, `tasks/`).
 - `.dockerignore`: exclui segredos e arquivos locais do contexto de build da imagem.
 - `entrypoint.sh`: busca configuração no Infisical em runtime quando Universal Auth está configurado; sem essas credenciais, inicia diretamente o comando da imagem.
 - `.env.example`: nomes e valores de exemplo das variáveis necessárias; não inclua credenciais reais.

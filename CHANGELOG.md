@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.0](https://github.com/Solierrr/generic-template/compare/v0.1.1...v0.2.0) (2026-10-02)
+
+
+### Features
+
+* add practical bruno api examples ([5382018](https://github.com/Solierrr/generic-template/commit/5382018aa456fa7a07293aaa7b6228478ba187cb))
+* add runtime and local api templates ([7bfb0d2](https://github.com/Solierrr/generic-template/commit/7bfb0d2fc19840a41b902e8910e4cf224337350b))
+
 ## [0.1.1](https://github.com/Solierrr/generic-template/compare/v0.1.0...v0.1.1) (2026-09-30)
 
 

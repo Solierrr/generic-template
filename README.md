@@ -4,6 +4,8 @@ Este repositório é o ponto de partida para novos serviços da Solaria. Ao cria
 
 ## Estrutura inicial
 
+O molde é completo de propósito. Consulte a [matriz por tipo de repositório](https://github.com/Solierrr/docs-warehouse/blob/main/templates/README.md#matriz-por-tipo) e remova depois, no repositório novo, os arquivos que o seu tipo não usa.
+
 - `http/README.md`: convenções do cliente HTTP local.
 - `http/bruno.json`: manifesto da coleção Bruno.
 - `http/environments/local.bru`: ambiente local da API, com credenciais vazias.

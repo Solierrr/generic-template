@@ -10,6 +10,7 @@ Este repositório é o ponto de partida para novos serviços da Solaria. Ao cria
 - `http/`: requisições `.bru` agrupadas em diretórios em inglês (`health/`, `authentication/`, `tasks/`).
 - `.dockerignore`: exclui segredos e arquivos locais do contexto de build da imagem.
 - `entrypoint.sh`: busca configuração no Infisical em runtime quando Universal Auth está configurado; sem essas credenciais, inicia diretamente o comando da imagem.
+- `Makefile`: comandos padrão da organização (`make help`); preencha o bloco "especifico deste repositorio" com os valores da stack, copiando o fragmento de `docs-warehouse/templates/make/`.
 - `.env.example`: nomes e valores de exemplo das variáveis necessárias; não inclua credenciais reais.
 - `Dockerfile`: ponto de partida para empacotar a aplicação.
 

@@ -14,6 +14,7 @@ O molde é completo de propósito. Consulte a [matriz por tipo de repositório](
 - `entrypoint.sh`: busca configuração no Infisical em runtime quando Universal Auth está configurado; sem essas credenciais, inicia diretamente o comando da imagem.
 - `Makefile`: comandos padrão da organização (`make help`); preencha o bloco "especifico deste repositorio" com os valores da stack, copiando o fragmento de `docs-warehouse/templates/make/`.
 - `.env.example`: nomes e valores de exemplo das variáveis necessárias; não inclua credenciais reais.
+- `infisical.yaml`: pastas do Infisical que o repositório lê e variáveis do `.env.example` que não vêm do Infisical. Mantenha alinhado com `VAULT_FOLDERS` do `Makefile`, ou remova junto com o workflow `infisical-env-check.yml` se o repositório não usa o Infisical.
 - `Dockerfile`: ponto de partida para empacotar a aplicação.
 
 ## Cliente HTTP local

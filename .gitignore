@@ -65,3 +65,7 @@ Desktop.ini
 
 # Linux
 .directory
+
+# preview environment (gallery/)
+gallery/node_modules/
+gallery/dist/

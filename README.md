@@ -17,6 +17,12 @@ O molde é completo de propósito. Consulte a [matriz por tipo de repositório](
 - `infisical.yaml`: pastas do Infisical que o repositório lê e variáveis do `.env.example` que não vêm do Infisical. Mantenha alinhado com `VAULT_FOLDERS` do `Makefile`, ou remova junto com o workflow `infisical-env-check.yml` se o repositório não usa o Infisical.
 - `Dockerfile`: ponto de partida para empacotar a aplicação.
 
+## Ambiente de preview (opcional)
+
+O molde traz uma base de ambiente de preview no GitHub Pages: a pasta `gallery/` (Vite e React, com a casca padrão de `@solaria.network/web-lib/gallery`: cabeçalho, menu com busca, rodapé, tema claro e escuro e idiomas pt-BR, en-US e es-ES), o `gallery.json` da raiz e o workflow `preview.yml`, que chama o workflow reutilizável do repositório `.github`. Quando a pasta `gallery/` não existe, o workflow não faz nada.
+
+Para usar: troque as seções e o conteúdo de `gallery/Gallery.tsx`, ajuste o `repository` ali, o `name` do `gallery.json` (igual ao nome do repositório, com título e descrição nos três idiomas) e habilite o GitHub Pages no modo GitHub Actions (Settings, Pages). O preview é publicado a cada push na `main`, a pull request roda só o typecheck e o build, e o portal de documentação lista e serve o preview em `docs.solarianetwork.site/previews/<repositório>/` depois que o nome entra em `scripts/previews-repos.json` do `worker-docs`. O build usa caminhos relativos para funcionar nos dois endereços. Para um Storybook, use o `preview-storybook.yml` no lugar do `preview-gallery.yml` e `"kind": "storybook"` no `gallery.json`. Para não ter preview, apague `gallery/`, `gallery.json` e `.github/workflows/preview.yml`.
+
 ## Cliente HTTP local
 
 Abra `http/` como uma coleção Bruno e edite os arquivos `.bru` para incluir as rotas reais do serviço. Consulte [`http/README.md`](./http/README.md) para instruções e o template canônico em [`docs-warehouse/templates/http/`](https://github.com/Solierrr/docs-warehouse/tree/main/templates/http).

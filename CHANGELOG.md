@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/Solierrr/generic-template/compare/v0.2.0...v0.3.0) (2026-11-01)
+
+
+### Features
+
+* add the preview environment base to the template ([7e2b2a2](https://github.com/Solierrr/generic-template/commit/7e2b2a2881f599fd7f916bfeec71dbc1535d211b))
+
 ## [0.2.0](https://github.com/Solierrr/generic-template/compare/v0.1.1...v0.2.0) (2026-10-02)
 
 
